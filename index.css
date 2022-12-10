@@ -1,0 +1,298 @@
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --fmtext:black;
+    --fmbd:#a4a4a4;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #2e3440;
+    background-image: url(./img/mbg.png);
+    background-size:100vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+.bg{
+    padding-top: 100px;
+    background-image: url(./img/wallhaven-o3reo9_vectorized.png);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: -180px -90px;
+}
+.bg1{
+    background-color: #2e3440;
+}
+body>div{
+    /* border: 1px solid wheat; */
+}
+.title{
+    margin: 0px auto;
+    height: 300px;
+    font-size: 200px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    color: #efeeee;
+    letter-spacing: 20px;
+    text-shadow:
+      -1px -1px 2px #efeeee,
+      2px 2px 4px #686868,
+      8px 8px 4px #686868,
+      4px 4px 3px #686868,
+      17px 17px 5px #2c2c2c;
+}
+.title .little{
+    font-size: 20px;
+    margin-top: 40px;
+    text-shadow: none;
+}
+.main1{
+    margin-top: 600px;
+    height: 350px;
+    position: relative;
+    translate: .3s;
+    background-color: #2e3440;
+}
+.bg1:hover{
+    --fmtext:#efeeee;
+    --fmbd:#434343;
+}
+.bg1:hover .bfq2{
+    border-radius: 0px;
+    transform: scale(1) translate(0px,0px);
+    background-attachment: fixed;
+    
+}
+.bfq{
+    width: 512px;
+    height: 319px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 20px auto;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 256px);
+    color: var(--fmtext);
+}
+.bfq1{
+    background-image: url(./img/Inguelight.png);
+}
+.bfq2{
+    background-image: url(./img/Inguedack.png);
+    transition: .3s;
+    border-radius: 50%;
+    transform: scale(0) translate(-930px,0px);
+}
+.bfq .left .fm{
+    width: 120px;
+    height: 120px;
+    background-image: url(./img/fm.jpg);
+    background-size: contain;
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    border: 2px solid var(--fmbd);
+    animation: fmro 30s .1s infinite linear;
+}
+.bfq .left{
+    display: inline-block;
+}
+.bfq .right {
+    display: inline-block;
+    position: relative;
+    left: 100px;
+    top: -80px;
+}
+.bfq .left h3,.bfq .left h5{
+    position: relative;
+    left: 50px;
+    top: 40px;
+}
+@keyframes fmro {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.path-0{
+  animation:pathAnim-0 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.svg1{
+    position: relative;
+    top: 20px;
+}
+@keyframes pathAnim-0{
+  0%{
+    d: path("M 0,400 C 0,400 0,200 0,200 C 130.19138755980862,195.70334928229664 260.38277511961724,191.4066985645933 340,186 C 419.61722488038276,180.5933014354067 448.6602870813397,174.07655502392345 528,182 C 607.3397129186603,189.92344497607655 736.9760765550241,212.28708133971293 847,216 C 957.0239234449759,219.71291866028707 1047.4354066985645,204.7751196172249 1143,199 C 1238.5645933014355,193.2248803827751 1339.2822966507179,196.61244019138755 1440,200 C 1440,200 1440,400 1440,400 Z");
+  }
+  25%{
+    d: path("M 0,400 C 0,400 0,200 0,200 C 122.5358851674641,188.13397129186603 245.0717703349282,176.26794258373207 327,180 C 408.9282296650718,183.73205741626793 450.2488038277513,203.0622009569378 527,204 C 603.7511961722487,204.9377990430622 715.933014354067,187.48325358851676 814,183 C 912.066985645933,178.51674641148324 996.0191387559807,187.00478468899522 1098,192 C 1199.9808612440193,196.99521531100478 1319.9904306220096,198.4976076555024 1440,200 C 1440,200 1440,400 1440,400 Z");
+  }
+  50%{
+    d: path("M 0,400 C 0,400 0,200 0,200 C 82.42105263157893,209.98086124401914 164.84210526315786,219.96172248803828 273,209 C 381.15789473684214,198.03827751196172 515.0526315789474,166.13397129186606 626,172 C 736.9473684210526,177.86602870813394 824.9473684210526,221.5023923444976 908,223 C 991.0526315789474,224.4976076555024 1069.157894736842,183.85645933014354 1157,173 C 1244.842105263158,162.14354066985646 1342.421052631579,181.07177033492823 1440,200 C 1440,200 1440,400 1440,400 Z");
+  }
+  75%{
+    d: path("M 0,400 C 0,400 0,200 0,200 C 124.5358851674641,226.91866028708134 249.0717703349282,253.83732057416267 337,261 C 424.9282296650718,268.1626794258373 476.2488038277513,255.56937799043064 568,223 C 659.7511961722487,190.43062200956936 791.9330143540669,137.88516746411486 884,141 C 976.0669856459331,144.11483253588514 1028.019138755981,202.88995215311007 1114,222 C 1199.980861244019,241.11004784688993 1319.9904306220096,220.55502392344496 1440,200 C 1440,200 1440,400 1440,400 Z");
+  }
+  100%{
+    d: path("M 0,400 C 0,400 0,200 0,200 C 130.19138755980862,195.70334928229664 260.38277511961724,191.4066985645933 340,186 C 419.61722488038276,180.5933014354067 448.6602870813397,174.07655502392345 528,182 C 607.3397129186603,189.92344497607655 736.9760765550241,212.28708133971293 847,216 C 957.0239234449759,219.71291866028707 1047.4354066985645,204.7751196172249 1143,199 C 1238.5645933014355,193.2248803827751 1339.2822966507179,196.61244019138755 1440,200 C 1440,200 1440,400 1440,400 Z");
+  }
+}
+.main2{
+    background-color: #292e39;
+    /* height: 3000px; */
+}
+.lo{
+    text-align: center;
+    height: 10px;
+}
+.lo img{
+    width: 100px;
+    position: relative;
+    top: 380px;
+}
+.download{
+    color: #efeeee;
+    text-align: center;
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.download>div{
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    background-color: #3b4252;
+    margin: 40px 50px 0px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid #434343;
+    transition: .3s;
+    position: relative;
+}
+.download>div:hover{
+    border: 3px solid var(--fmbd);
+    letter-spacing: 2px;
+}
+.download a{
+    color:#80a0c1 ;
+    text-decoration: none;
+    display: block;
+    margin-top: 130px;
+}
+.cards{
+    width: 1200px;
+    padding: 30px;
+    margin: 0px auto;
+    color: #efeeee;
+}
+.card{
+    display: inline-block;
+    width: 324px;
+    margin: 30px;
+    height: 140px;
+    cursor: pointer;
+    background-color: rgba(89, 89, 89, 0.25);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: rgba(14, 14, 14, 0.19) 0px 6px 15px 0px;
+    border-radius: 12px;
+    color: rgb(128, 128, 128);
+    box-shadow: 3px 3px 16px rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+
+.card .left{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    transition: .3s;
+    position: relative;
+    top: -15px;
+    margin: 0px 10px 0px 20px;
+    background-size: contain;
+}
+.card .right{
+    display: inline-block;
+    width: 200px;
+}
+
+.card:nth-child(1) .left{
+    background-image: url(./img/WinUI3.ico);
+}
+.card:nth-child(2) .left{
+    background-image: url(./img/模块化.png);
+}
+.card:nth-child(3) .left{
+    background-image: url(./img/多接口.png);
+}
+.card:nth-child(4) .left{
+    background-image: url(./img/定制歌单2.png);
+}
+.card:nth-child(5) .left{
+    background-image: url(./img/定制主题.png);
+}
+.card:nth-child(6) .left{
+    background-image: url(./img/全平台.webp);
+}
+.card:nth-child(7) .left{
+    background-image: url(./img/沉浸模式.webp);
+}
+.card:nth-child(8) .left{
+    background-image: url(./img/数据同步.webp);
+}
+.card:nth-child(9) .left{
+    background-image: url(./img/本地播放.webp);
+}
+.card:nth-child(10) .left{
+    background-image: url(./img/下载.webp);
+}
+.card:nth-child(11) .left{
+    background-image: url(./img/多用户2.png);
+}
+.card:nth-child(12) .left{
+    background-image: url(./img/更多.png);
+}
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    color: rgba(255, 255, 255, 0.75);
+    transform: translateY(-10px) scale(1.01);
+}
+.main3{
+    height: 700px;
+    background-color: #2e3440;
+    background-size:cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.main3 svg{
+    position:absolute;
+    top: -100px;
+}
+footer{
+    height: 100px;
+    text-align: center;
+    color: #abb9bf;
+    position: absolute;
+    bottom: 0px;
+    left: 400px;
+    font-size: 15px;
+}
+footer span{
+    display: inline-block;
+    margin: 0px 20px;
+}
+
